@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Code</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="bus:${allBuss}">
+        <td th:text="${bus.id}">ID</td>
+        <td th:text="${bus.busName}">Namee</td>
+        <td th:text="${bus.busCode}">Code</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

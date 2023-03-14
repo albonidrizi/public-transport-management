@@ -17,7 +17,7 @@ import java.util.List;
 public class BusController {
 
     @Autowired
-    public BusServiceInterface service;
+    private BusServiceInterface service;
 
     @GetMapping("/getAllBuss")
     public ModelAndView getAllBus() {

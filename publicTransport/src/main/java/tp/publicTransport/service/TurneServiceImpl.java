@@ -18,10 +18,10 @@ import java.util.stream.Collectors;
 public class TurneServiceImpl implements TurneServiceInterface {
 
     @Autowired
-    public TurneRepository repo;
+    private TurneRepository repo;
 
     @Autowired
-    public TurneMapperImpl mapper;
+    private TurneMapperImpl mapper;
 
     @Override
     public List<TurnDto> getAllTurn() {

@@ -17,4 +17,6 @@ public interface EmployeeBusLineServiceInterface {
     EmployeeBusLineDto updateEmployeeBusLine2(EmployeeBusLineDto body);
 
     EmployeeBusLineDto deleteEmployeeBusLineById(Integer id);
+
+    List<EmployeeBusLineDto> getEmployeeNamesByLineId(Integer lineId);
 }

@@ -1,5 +1,6 @@
 package tp.publicTransport.mapper;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import tp.publicTransport.dto.StationHoursDto;
@@ -7,8 +8,11 @@ import tp.publicTransport.mapper.MapperInterface.LineMapperInterface;
 import tp.publicTransport.mapper.MapperInterface.PositionMapperInterface;
 import tp.publicTransport.mapper.MapperInterface.StationHoursMapperInterface;
 import tp.publicTransport.model.StationHours;
+
+
+@RequiredArgsConstructor
 @Component
-public class StationHoursMapperImpl implements StationHoursMapperInterface {
+public class StationHoursMapperImpl implements StationHoursMapperInterface{
 
     @Autowired
     private LineMapperInterface lineMapperInterface;
@@ -90,8 +94,8 @@ public class StationHoursMapperImpl implements StationHoursMapperInterface {
         dto.setXhepcishtRenova(entity.getXhepcishtRenova());
         dto.setXhepcishtAlpi(entity.getXhepcishtAlpi());
         dto.setXhepcishtVenecia(entity.getXhepcishtVenecia());
-        dto.setPorojShkolla(entity.getPorojShkolla());
         dto.setPorojIra(entity.getPorojIra());
+        dto.setPorojShkolla(entity.getPorojShkolla());
         dto.setXhamiaDrenovec(entity.getXhamiaDrenovec());
         dto.setShkolla7marsi(entity.getShkolla7marsi());
         dto.setCerdhePotok(entity.getCerdhePotok());

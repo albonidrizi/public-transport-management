@@ -16,10 +16,10 @@ import java.util.stream.Collectors;
 public class PositionServiceImpl implements PositionServiceInterface {
 
     @Autowired
-    public PositionRepository repository;
+    private PositionRepository repository;
 
     @Autowired
-    public PositionMapperImpl mapper;
+    private PositionMapperImpl mapper;
 
     @Override
     public List<PositionDto> getAllPosition() {

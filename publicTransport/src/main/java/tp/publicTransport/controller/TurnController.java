@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/PTM")
+@RequestMapping("/public_transport_sys_mng")
 public class TurnController {
 
     @Autowired
@@ -43,7 +43,7 @@ public class TurnController {
         return service.updateTurn2(body);
     }
 
-    @DeleteMapping("/deleteTurn/{TurnId}")
+    @DeleteMapping("/deleteTurn/{turnId}")
     public TurnDto deleteTurnPId(@PathVariable("turnId") Integer id) {
         return service.deleteTurnById(id);
     }

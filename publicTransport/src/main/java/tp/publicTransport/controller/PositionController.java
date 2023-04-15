@@ -9,12 +9,12 @@ import tp.publicTransport.dto.PositionDto;
 import tp.publicTransport.service.ServiceInterface.PositionServiceInterface;
 
 import java.util.List;
-
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/PTM")
+@RequestMapping("/public_transport_sys_mng")
 public class PositionController {
+
     @Autowired
     public PositionServiceInterface service;
 
@@ -37,7 +37,7 @@ public class PositionController {
     public PositionDto updatePosition1(@Validated @RequestBody PositionDto body){
         return service.updatePosition1(body);
     }
-    @PatchMapping("/UpdatePosition2")
+    @PatchMapping("/updatePosition2")
     public PositionDto updatePosition2(@Validated @RequestBody PositionDto body){
         return service.updatePosition2(body);
     }

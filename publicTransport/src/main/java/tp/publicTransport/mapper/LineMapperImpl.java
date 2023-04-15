@@ -12,9 +12,10 @@ public class LineMapperImpl implements LineMapperInterface {
         if (dto == null) return null;
 
         Line entity= new Line();
-        entity.setId(dto.getId());
+        entity.setLineId(dto.getLineId());
         entity.setLineName(dto.getLineName());
         entity.setDestination(dto.getDestination());
+        entity.setCodeID(dto.getCodeID());
         return entity;
     }
 
@@ -24,9 +25,10 @@ public class LineMapperImpl implements LineMapperInterface {
 
         LineDto dto = new LineDto();
 
-        dto.setId(entity.getId());
+        dto.setLineId(entity.getLineId());
         dto.setLineName(entity.getLineName());
         dto.setDestination(entity.getDestination());
+        dto.setCodeID(entity.getCodeID());
         return dto;
     }
 }

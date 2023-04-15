@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/PTM")
+@RequestMapping("/public_transport_sys_mng")
 public class EmployeeBusLineController {
 
 
@@ -47,5 +47,9 @@ public class EmployeeBusLineController {
         return service.deleteEmployeeBusLineById(id);
     }
 
+    @GetMapping("/getEmployeeByLineId")
+    public List<EmployeeBusLineDto> getEmployeeNamesByLineId(@RequestParam("id") Integer lineId){
+        return service.getEmployeeNamesByLineId(lineId);
+    }
 
 }

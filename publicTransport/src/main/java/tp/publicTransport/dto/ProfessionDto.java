@@ -9,4 +9,7 @@ import javax.persistence.Column;
 public class ProfessionDto {
     private int id;
     private String profession;
+    private String grade;
+    private String state;
+
 }

@@ -16,9 +16,9 @@ import java.util.stream.Collectors;
 public class EmployeeBusLineServiceImpl implements EmployeeBusLineServiceInterface {
 
     @Autowired
-    public EmployeeBusLineRepository repository;
+    private EmployeeBusLineRepository repository;
     @Autowired
-    public EmployeeBusLineMapperImpl mapper;
+    private EmployeeBusLineMapperImpl mapper;
 
     @Override
     public List<EmployeeBusLineDto> getAllEmployeeBusLine() {
@@ -53,5 +53,10 @@ public class EmployeeBusLineServiceImpl implements EmployeeBusLineServiceInterfa
         EmployeeBusLineDto delete = getEmployeeBusLineById(id);
         repository.deleteById(id);
         return delete;
+    }
+
+    @Override
+    public List<EmployeeBusLineDto> getEmployeeNamesByLineId(Integer lineId) {
+        return repository.groupEmployeeNamesByLineId(lineId).stream().map(mapper::toDto).collect(Collectors.toList());
     }
 }

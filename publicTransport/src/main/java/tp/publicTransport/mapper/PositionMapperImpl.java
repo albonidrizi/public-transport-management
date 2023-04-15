@@ -12,7 +12,7 @@ public class PositionMapperImpl implements PositionMapperInterface {
         if (dto == null)return null;
 
         Position entity = new Position();
-        entity.setId(dto.getId());
+        entity.setPositionId(dto.getPositionId());
         entity.setPosition(dto.getPosition());
 
         return entity;
@@ -23,7 +23,7 @@ public class PositionMapperImpl implements PositionMapperInterface {
         if (entity == null)return null;
 
         PositionDto dto = new PositionDto();
-        dto.setId(entity.getId());
+        dto.setPositionId(entity.getPositionId());
         dto.setPosition(entity.getPosition());
         return dto;
     }

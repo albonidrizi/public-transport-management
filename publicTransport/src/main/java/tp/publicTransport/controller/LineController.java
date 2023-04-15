@@ -2,6 +2,7 @@ package tp.publicTransport.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import tp.publicTransport.dto.LineDto;
@@ -12,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/PTM")
+@RequestMapping("/public_transport_sys_mng")
 public class LineController {
 
     @Autowired
@@ -41,5 +42,22 @@ public class LineController {
     };
     @DeleteMapping("/deleteLine/{id}")
     public LineDto deleteLineById(@PathVariable("id") Integer id){ return service.deleteLineById(id);};
+
+
+    @GetMapping("/getLineByName")
+    public List<LineDto> getLineByName(@RequestParam("lineName") String lineName){
+        return service.getlineByName(lineName);
+    }
+
+    @GetMapping("/filter")
+    public Page<LineDto> filter(@RequestParam Integer pageSize,
+                                @RequestParam Integer pageNumber,
+                                @RequestParam String sort, Boolean isAscending,
+                                @RequestParam(name = "lineName", required = false) String lineName,
+                                @RequestParam(name = "destination", required = false) String destination,
+                                @RequestParam(name = "codeID", required = false) Integer codeID) {
+        return service.filter(pageSize, pageNumber, sort, isAscending, lineName, destination, codeID);
+    }
+
 
 }

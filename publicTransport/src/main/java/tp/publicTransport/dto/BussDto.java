@@ -6,6 +6,6 @@ import lombok.Setter;
 @Getter @Setter
 public class BussDto {
     private int id;
-    private String busName;
-    private String busCode;
+    private String bussName;
+    private String bussCode;
 }

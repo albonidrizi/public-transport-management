@@ -13,7 +13,7 @@ public class Position {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id",nullable = false, unique = true)
-    private int id;
+    private int positionId;
 
     @Column(name = "position",length = 45 , nullable = false, unique = false)
     private String position;

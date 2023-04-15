@@ -16,6 +16,8 @@ public class ProfessionMapperImpl implements ProfessionMapperInterface {
 
         entity.setId(dto.getId());
         entity.setProfession(dto.getProfession());
+        entity.setGrade(dto.getGrade());
+        entity.setState(dto.getState());
         return entity;
     }
 
@@ -26,6 +28,8 @@ public class ProfessionMapperImpl implements ProfessionMapperInterface {
         ProfessionDto dto = new ProfessionDto();
         dto.setId(entity.getId());
         dto.setProfession(entity.getProfession());
+        dto.setGrade(entity.getGrade());
+        dto.setState(entity.getState());
         return dto;
     }
 }

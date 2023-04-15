@@ -31,13 +31,13 @@ public class StationHours {
     @Column(name = "molino", nullable = true, unique = false)
     private Time molino;
 
-    @Column(name = "bexhetiKompani", nullable = true, unique = false)
+    @Column(name = "bexheti_kompani", nullable = true, unique = false)
     private Time bexhetiKompani;
 
-    @Column(name = "hitMobilie", nullable = true, unique = false)
+    @Column(name = "hit_mobilie", nullable = true, unique = false)
     private Time hitMobilie;
 
-    @Column(name = "makPetrol", nullable = true, unique = false)
+    @Column(name = "mak_petrol", nullable = true, unique = false)
     private Time makPetrol;
 
     @Column(name = "shipadi", nullable = true, unique = false)
@@ -46,82 +46,82 @@ public class StationHours {
     @Column(name = "rotring", nullable = true, unique = false)
     private Time rotring;
 
-    @Column(name = "xhamiaLarme", nullable = true, unique = false)
+    @Column(name = "xhamia_larme", nullable = true, unique = false)
     private Time xhamiaLarme;
 
     @Column(name = "gjygji", nullable = true, unique = false)
     private Time gjygji;
 
-    @Column(name = "fitnesArena", nullable = true, unique = false)
+    @Column(name = "fitnes_arena", nullable = true, unique = false)
     private Time fitnesArena;
 
-    @Column(name = "pallatiKultures", nullable = true, unique = false)
+    @Column(name = "pallati_kultures", nullable = true, unique = false)
     private Time pallatiKultures;
 
     @Column(name = "ronaldo", nullable = true, unique = false)
     private Time ronaldo;
 
-    @Column(name = "veroJambo", nullable = true, unique = false)
+    @Column(name = "vero_jambo", nullable = true, unique = false)
     private Time veroJambo;
 
-    @Column(name = "pallmaMall", nullable = true, unique = false)
+    @Column(name = "pallma_mall", nullable = true, unique = false)
     private Time pallmaMall;
 
-    @Column(name = "stacioniAutobuseve", nullable = true, unique = false)
+    @Column(name = "stacioni_autobuseve", nullable = true, unique = false)
     private Time stacioniAutobuseve;
 
-    @Column(name = "xhepcishtRenova", nullable = true, unique = false)
+    @Column(name = "xhepcisht_renova", nullable = true, unique = false)
     private Time xhepcishtRenova;
 
-    @Column(name = "xhepcishtAlpi", nullable = true, unique = false)
+    @Column(name = "xhepcisht_alpi", nullable = true, unique = false)
     private Time xhepcishtAlpi;
 
-    @Column(name = "xhepcishtVenecia", nullable = true, unique = false)
+    @Column(name = "xhepcisht_venecia", nullable = true, unique = false)
     private Time xhepcishtVenecia;
 
-    @Column(name = "porojShkolla", nullable = true, unique = false)
+    @Column(name = "poroj_shkolla", nullable = true, unique = false)
     private Time porojShkolla;
 
-    @Column(name = "porojIra", nullable = true, unique = false)
+    @Column(name = "poroj_ira", nullable = true, unique = false)
     private Time porojIra;
 
-    @Column(name = "xhamiaDrenovec", nullable = true, unique = false)
+    @Column(name = "xhamia_drenovec", nullable = true, unique = false)
     private Time xhamiaDrenovec;
 
-    @Column(name = "shkolla7marsi", nullable = true, unique = false)
+    @Column(name = "shkolla_7_marsi", nullable = true, unique = false)
     private Time shkolla7marsi;
 
-    @Column(name = "cerdhePotok", nullable = true, unique = false)
+    @Column(name = "cerdhe_potok", nullable = true, unique = false)
     private Time cerdhePotok;
 
-    @Column(name = "shkollaMuzikes", nullable = true, unique = false)
+    @Column(name = "shkolla_muzikes", nullable = true, unique = false)
     private Time shkollaMuzikes;
 
-    @Column(name = "shparkaseBank", nullable = true, unique = false)
+    @Column(name = "shparkase_bank", nullable = true, unique = false)
     private Time shparkaseBank;
 
-    @Column(name = "embeltoreMostar1", nullable = true, unique = false)
+    @Column(name = "embeltore_mostar1", nullable = true, unique = false)
     private Time embeltoreMostar1;
 
-    @Column(name = "mobiljeAntillop", nullable = true, unique = false)
+    @Column(name = "mobilje_antillop", nullable = true, unique = false)
     private Time mobiljeAntillop;
 
-    @Column(name = "recicMadhe", nullable = true, unique = false)
+    @Column(name = "recic_madhe", nullable = true, unique = false)
     private Time recicMadhe;
 
-    @Column(name = "shkollaPerparimiRM", nullable = true, unique = false)
+    @Column(name = "shkolla_perparimi_rm", nullable = true, unique = false)
     private Time shkollaPerparimiRM;
 
-    @Column(name = "varrezatRecicVogel", nullable = true, unique = false)
+    @Column(name = "varrezat_recic_vogel", nullable = true, unique = false)
     private Time varrezatRecicVogel;
 
-    @Column(name = "rKurtishi", nullable = true, unique = false)
+    @Column(name = "r_kurtishi", nullable = true, unique = false)
     private Time rKurtishi;
 
     @Column(name = "arabati", nullable = true, unique = false)
     private Time arabati;
 
-    @Column(name = "varrezatQytetit", nullable = true, unique = false)
+    @Column(name = "varrezat_qytetit", nullable = true, unique = false)
     private Time varrezatQytetit ;
 }
 

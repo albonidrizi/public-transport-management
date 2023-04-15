@@ -5,6 +5,6 @@ import lombok.Setter;
 
 @Getter @Setter
 public class PositionDto {
-    private int id;
+    private int positionId;
     private String position;
 }

@@ -15,9 +15,9 @@ public class Bus {
     private int id;
 
     @Column(name="bus_name",length = 200, nullable = false,unique = false)
-    private String busName;
+    private String bussName;
 
     @Column(name = "bus_code", length = 200, nullable = false, unique = false)
-    private String busCode;
+    private String bussCode;
 
 }

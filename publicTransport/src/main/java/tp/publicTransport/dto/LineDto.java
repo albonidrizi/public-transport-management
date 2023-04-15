@@ -5,8 +5,9 @@ import lombok.Setter;
 
 @Getter @Setter
 public class LineDto {
-    private int id;
+    private int lineId;
     private String lineName;
     private String destination;
+    public Integer codeID;
 
 }

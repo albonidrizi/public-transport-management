@@ -12,11 +12,14 @@ public class Line {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id",nullable = false, unique = true)
-    private int id;
+    private int lineId;
 
     @Column(name = "line_name", length = 200, nullable = false, unique = false)
     private String lineName;
 
     @Column(name = "destination",length = 200 , nullable = false, unique = false)
     private String destination;
+
+    @Column(name = "codeID",length = 200 , nullable = false, unique = false)
+    private Integer codeID;
 }

@@ -17,9 +17,9 @@ import java.util.stream.Collectors;
 public class ProfessionServiceImpl implements ProfessionServiceInterface {
 
     @Autowired
-    public ProfessionMapperImpl mapper;
+    private ProfessionMapperImpl mapper;
     @Autowired
-    public ProfessionRepository repo;
+    private ProfessionRepository repo;
 
     @Override
     public List<ProfessionDto> getAllProfession() {

@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/PTM")
+@RequestMapping("/public_transport_sys_mng")
 public class StationHoursController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class StationHoursController {
         return service.getAllStationHours();
     }
 
-    @GetMapping("/getPositionById")
+    @GetMapping("/getStationById")
     public StationHoursDto getStationHoursById(@RequestParam("StationHoursId") Integer id){
         return service.getStationHoursById(id);
     }
@@ -38,12 +38,16 @@ public class StationHoursController {
     public StationHoursDto updateStationHours1(@Validated @RequestBody StationHoursDto body){
         return service.updateStationHours1(body);
     }
-    @PatchMapping("/UpdatePosition2")
+    @PatchMapping("/updateStation2")
     public StationHoursDto updateStationHours2(@Validated @RequestBody StationHoursDto body){
         return service.updateStationHours2(body);
     }
-    @DeleteMapping("/deletePosition/{id}")
+    @DeleteMapping("/deleteStation/{id}")
     public StationHoursDto deleteStationHoursById(@PathVariable("id") Integer id){
         return service.deleteStationHoursById(id);
+    }
+    @GetMapping("/getHoursLine")
+    public  List<StationHoursDto> hoursLine (@RequestParam("lineId")Integer lineId ,@RequestParam("positionId") Integer positonId){
+        return service.getHoursLine(lineId,positonId);
     }
 }

@@ -12,7 +12,7 @@ public class Line {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id",nullable = false, unique = true)
-    private int lineId;
+    private int lineId; 
 
     @Column(name = "line_name", length = 200, nullable = false, unique = false)
     private String lineName;
